@@ -21,6 +21,8 @@ _기울임_
 ### 링크넣기
 
 [링크자료](https://www.naver.com)
+[2025-09-11-팀미션12조](https://www.figma.com/board/fkWh8iBJoK0fYMfgyMcKRA/1%EC%A1%B0%EC%A7%B1?node-id=0-1&t=6Dj5aWrws0RfaGBl-1)
+
 
 ### 이미지넣기
 
