@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex 이해하기</title>
+    <head>
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            outline: 1px solid red;
+            display: flex;
+            margin: 100px auto
+            justify-content: flex-start;
+        }
+
+        .a {
+            background-color: tomato;
+        }
+
+        .b {
+            background-color: olive;
+        }
+
+        .c {
+            background-color: skyblue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+    </div>
+    <div class="container" style="display: flex;">
+        <span class="box a">A</span>
+        <span class="box b">B</span>
+        <span class="box c">C</span>

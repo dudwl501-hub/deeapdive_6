@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container {
+            width: 70%;
+            /* Parent element size */
+            border: 1px solid tomato;
+            height: 300px
+            overflow: auto;
+        }
+.thumb {
+        width: 200px;
+        height: 300px;
+        border: 2px solid black;
+        overflow: hidden;
+    }
+ 
+.thrumb img {
+    height: 100%
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.4s;
+}    
+
+.thumb: hover img {
+    scale: 1.2;
+    /* 1.2qo 키우기, transform: scale(1.2); */
+    rotate: 5deg;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="thumb"
+        <img src="./image/card_thumb_0.jpg" alt="">
+
+    <div class="container">
+        <p>
+            Once upon a time, in a quiet forest, a tiny squirrel dreamed of reaching the highest tree. Every morning, it gathered courage, stepping higher and higher, never giving up on its dream.
+
+        </p>
+
+        <img src="./image/body-bg.jpg" alt="" >
+        <img src="./image/ghost-n1.png" alt="" >
+
+        <p>
+        In a village by the river, a little girl found a golden feather. She wondered if it belonged to a magical bird. Each night, she held it close, waiting for the bird to return for it.
+
+        </p>
+    </div>
+        </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>     
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업띄우기</title>
+    <script src="https://kit.fontawesome.com/b849a7c68b.js" crossorigin="anonymous"></script>
+    <style>
+        /* reset */
+        * {
+            /* '*' 아스테리스크 기호 -> 전체선택자 모둔 html태그를 선택 */
+            margin: 0; /* 요소의 바깥여백 */
+            padding: 0; /* 요소의 안쪽여백 */
+            box-sizing: border-box; /* 박스크기계산방식 */
+        }
+
+        body {
+            margin: 0; 
+            /* bodyd의 기본 여백 제거 */
+        }
+
+        h1 { 
+            display: inline-block;
+            padding: 24px;}
+
+        .popup-container {
+            width: 350px;
+            height: 200px;
+            border: 2px dashed teal;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 128, 128, 0.3);
+            padding: 30px;
+            position: fixed;
+            right: 50px;
+            top: 100px;
+            display: none;
+            /* 화면에서 숨기기 */
+        }
+
+
+        </style>
+ </head>
+ 
+ <body>
+    <h1>DEEP DIVE</h1>
+    <button type="button" class="open-popup">
+        레이어팝업 열기
+    </button>
+    <section class="popup-container"
+        role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="popup-title"
+        >
+        <h2 id ="Popup Title" class="popup-header">Modal
+        </h2>
+        <div class="contents">
+            여기에는 팝업내용이 들어옵니다
+        </div>
+
+        <div class="popup-actions">
+        <button type="button" class="close-popup">
+            <span>팝업창 닫기</span>
+            <i class="fa-solid fa-xmark"></i>
+            </button>    
+        </div>
+    </section>
+
+    <script>
+        /* .open-popup 버튼을 클릭하면, .popup-container가 요소를 화면에 보이게 변경할거야 */
+        const openBtn = document.querySelector('.open-popup')
+        const popup = document.querySelector('.popup-container')    
+
+        openBtn.addEventListener('click',()=>{
+            console.log('clicked!')
+            popup.style.display = 'block';
+        })
+        /* .close-popup 버튼을 클릭하면, .popup-container가 요소를 화면에서 숨기게 변경할거야 */
+        const closeBtn = document.querySelector('.close-popup')
+        closeBtn.addEventListener('click',()=>{
+            popup.style.display = 'none';
+        })
+
+    </script>
+ </body>
+    
+</html>
