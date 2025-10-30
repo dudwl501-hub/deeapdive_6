@@ -1,0 +1,19 @@
+ <section id="list">
+        <p>Lion</p>
+        <p>Tiger</p>
+        <p>Puppy</p>
+        <p>Parret</p>
+        <p>Cat</p>
+    </section>
+
+    <script>
+        const animals = document.querySelector('P')
+        console.log(animals);
+        animals.forEach((animal, idx) => {
+            console.log(`${idx}: ${animal.textContent}`);
+        })
+
+    </script>
+</body>
+</html>
+
